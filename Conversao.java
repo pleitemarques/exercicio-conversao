@@ -26,81 +26,58 @@ class Conversao {
 		try {
 
 			//LAYOUT CONSTRUCTION
-			System.out.println(formt);
-			System.out.println(title);
-			System.out.println(formt);
-			System.out.println(titleOpt);
-			System.out.println(formt);
-			System.out.println(option1);
-			System.out.println(option2);
-			System.out.println(formt);
-			System.out.print(entryOpt);
+			System.out.print(formt + "\n" + title + "\n" + formt + "\n" + titleOpt + "\n" + formt + "\n" + option1 + "\n" + option2 + "\n" + formt + "\n" + entryOpt);
 
 			//ENTRY CONVERSION OPTIONS
 			int conversion = scanner.nextInt();
-
-			//LAYOUT CONSTRUCTION
-			System.out.println(formt);
 
 			//OPTION 1 CONDITION
 			if (conversion == 1) {
 			
 				//LAYOUT CONSTRUCTION
-				System.out.println(fahVsCel);
-				System.out.println(formt);
-				System.out.print(degreesFah);
+				System.out.print(formt + "\n" + fahVsCel + "\n" + formt + "\n" + degreesFah);
 
 				//ENTRY FAHRENHEIT
 				float fahrenheit = scanner.nextFloat();
 
-				//LAYOUT CONSTRUCTION
-				System.out.println(formt);
-	
 				//CONVERT FAHRENHEIT TO CELSIUS
 				float conversionCelsius = (fahrenheit - 32) * 5 / 9;
 	
 				//LAYOUT CONSTRUCTION
-				System.out.println(result + conversionCelsius + " C");
-				System.out.println(formt);
-				scanner.close();
+				System.out.println(formt + "\n" + result + conversionCelsius + " C" + "\n" + formt);
 			}
 	
 			//OPTION 2 CONDITION
 			else if (conversion == 2) {
 			
 				//LAYOUT CONSTRUCTION
-				System.out.println(celVsFah);
-				System.out.println(formt);
-				System.out.print(degreesCel);
+				System.out.print(formt + "\n" + celVsFah + "\n" + formt + "\n" + degreesCel);
 
 				//ENTRY CELSIUS
 				float celsius = scanner.nextFloat();
-
-				//LAYOUT CONSTRUCTION
-				System.out.println(formt);
 	
 				//CONVERT CELSIUS TO FAHRENHEIT
 				float conversionFahrenheit = (celsius * 9 / 5) + 32;
 	
 				//LAYOUT CONSTRUCTION
-				System.out.println(result + conversionFahrenheit + " F");
-				System.out.println(formt);
-				scanner.close();
+				System.out.println(formt + "\n" + result + conversionFahrenheit + " F" + "\n" + formt);
 			}
 
 			else {
 
 				//INVALID OPTION
-				System.out.println(invalidOption);
-				System.out.println(formt);
-				scanner.close();
+				System.out.println(formt + "\n" + invalidOption + "\n" + formt);
 			}
+
+			//CLOSE APP
+			scanner.close();
+			
 		} catch (Exception e) {
 
 			//GENERIC ERROR
-			System.out.println(formt);
-			System.out.println(errorGeneric);
-			System.out.println(formt);
+			System.out.println(formt + "\n" + errorGeneric + "\n" + formt);
+
+			//CLOSE APP
 			scanner.close();
 		}
 	}
