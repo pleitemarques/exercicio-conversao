@@ -4,7 +4,7 @@ class Conversao {
 
 	public static void main(String[] args) {
 
-		//SYSTEM CLASS
+		//SCANNER CLASS
 		Scanner scanner = new Scanner(System.in);
 
 		//LAYOUT
